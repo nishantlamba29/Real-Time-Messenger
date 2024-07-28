@@ -5,6 +5,7 @@ const authRoutes = require("./routes/auth");
 const messageRoutes = require("./routes/messages");
 const app = express();
 const socket = require("socket.io");
+const conn=require("./db/mongo")
 require("dotenv").config();
 
 app.use(cors());
